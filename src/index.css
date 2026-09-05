@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-cream-50: #fffdf7;
+  --color-cream-100: #fdf8ee;
+  --color-cream-200: #f9efdb;
+  --color-cream-300: #f3e2c4;
+  --color-cream-400: #ebd0a3;
+  --color-cream-500: #e0b87c;
+
+  --color-ivory-50: #fdfbf5;
+  --color-ivory-100: #faf5e9;
+  --color-ivory-200: #f5edd3;
+  --color-ivory-300: #efe1b8;
+
+  --color-amber-50: #fff8eb;
+  --color-amber-100: #ffefc4;
+  --color-amber-200: #ffe08a;
+  --color-amber-300: #ffc94a;
+  --color-amber-400: #f7b32b;
+  --color-amber-500: #e09a1f;
+  --color-amber-600: #c47d16;
+  --color-amber-700: #9e6114;
+  --color-amber-800: #7e4d16;
+  --color-amber-900: #663f17;
+
+  --color-gold-400: #d4af37;
+  --color-gold-500: #c5a028;
+  --color-gold-600: #a88820;
+  --color-gold-700: #8a6f1a;
+
+  --color-ink-700: #4a3f33;
+  --color-ink-800: #3a3128;
+  --color-ink-900: #2a241e;
+
+  /* Fonts */
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Jost", system-ui, sans-serif;
+
+  /* Animations */
+  --animate-fade-in-up: fadeInUp 0.8s ease-out forwards;
+  --animate-fade-in: fadeIn 1s ease-out forwards;
+  --animate-shimmer: shimmer 3s ease-in-out infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-glow-pulse: glowPulse 4s ease-in-out infinite;
+
+  /* Keyframes */
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(24px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes shimmer {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.7; }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes glowPulse {
+    0%, 100% { opacity: 0.4; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.05); }
+  }
+}
