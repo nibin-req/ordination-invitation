@@ -7,5 +7,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/ordination-invitation/',
+  // base: '/ordination-invitation/',
+    base: '/',
+
 })
