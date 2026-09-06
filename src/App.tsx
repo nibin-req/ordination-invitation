@@ -1,16 +1,16 @@
-import { useCountdown } from './hooks/useCountdown';
-import portraitUrl from './images/portrait.jpg';
-import churchUrl from './images/church.jpg';
-import candlesUrl from './images/candles.jpg';
-import raysUrl from './images/rays.jpg';
-import sleevaUrl from './images/sleeva.svg';
+import { useCountdown } from "./hooks/useCountdown";
+import portraitUrl from "./images/portrait.jpg";
+import churchUrl from "./images/church.jpg";
+import candlesUrl from "./images/candles.jpg";
+import raysUrl from "./images/rays.jpg";
+import sleevaUrl from "./images/sleeva.svg";
 
 const PORTRAIT_URL = portraitUrl;
 const CHURCH_URL = churchUrl;
 const CANDLES_URL = candlesUrl;
 const RAYS_URL = raysUrl;
 const NEW_EMBLEM_URL = sleevaUrl;
-const ORDINATION_DATE = '2026-12-21T09:00:00';
+const ORDINATION_DATE = "2026-12-30T14:00:00";
 
 // const PORTRAIT_URL = '/images/portrait.jpg';
 // const CHURCH_URL = '/images/church.jpg';
@@ -18,65 +18,63 @@ const ORDINATION_DATE = '2026-12-21T09:00:00';
 // const RAYS_URL = '/images/rays.jpg';
 
 const MAPS_URL =
-  'https://www.google.com/maps/search/?api=1&query=St+Mary%27s+Malankara+Catholic+Church+Trivandrum';
+  "https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUqDQgBEC4YrwEYxwEYgAQyBggAEEUYOTINCAEQLhivARjHARiABDIHCAIQABiABDIICAMQABgWGB4yCggEEAAYChgWGB4yCAgFEAAYFhgeMgoIBhAAGAoYFhgeMgoIBxAAGAoYFhgeMggICBAAGBYYHtIBCTEzNTE3ajBqN6gCALACAA&um=1&ie=UTF-8&fb=1&gl=ae&sa=X&geocode=KQmk07lEnQg7MZEVx8x0rkgN&daddr=St+.+Joseph+Church,+Punnakunnam,+Kuttanad+Taluk,+Kerala+688504,+India";
 
 function DoveOrnament() {
-   return (
-  //   <div className="flex items-center justify-center gap-4 py-6">
-  //     <span className="h-px w-16 bg-gradient-to-r from-transparent to-gold-400/50" />
-      
-  //     {/* Golden Sleeba (St. Thomas Cross) SVG */}
-      
-      
-  //     <svg
-  //       width="36"
-  //       height="44"
-  //       viewBox="0 0 100 120"
-  //       fill="currentColor"
-  //       className="text-gold-500 animate-float drop-shadow-[0_2px_8px_rgba(234,179,8,0.3)]"
-  //       aria-label="Sleeba Cross"
-  //     >
+  return (
+    //   <div className="flex items-center justify-center gap-4 py-6">
+    //     <span className="h-px w-16 bg-gradient-to-r from-transparent to-gold-400/50" />
 
-  //       {/* Descending Holy Spirit Dove */}
-  //       <path d="M50 2 c-3 0 -5 2 -5 5 c0 3 2 5 5 5 c3 0 5 -2 5 -5 c0 -3 -2 -5 -5 -5 z M46 6 c-3 -3 -8 -2 -10 1 c3 1 5 2 7 4 z M54 6 c3 -3 8 -2 10 1 c-3 1 -5 2 -7 4 z" />
-        
-  //       {/* Vertical & Horizontal Cross Shafts */}
-  //       <rect x="46" y="22" width="8" height="50" rx="1" />
-  //       <rect x="25" y="38" width="50" height="8" rx="1" />
+    //     {/* Golden Sleeba (St. Thomas Cross) SVG */}
 
-  //       {/* Budded / Floral Ends (3 Buds per arm) */}
-  //       {/* Top Arm */}
-  //       <circle cx="50" cy="19" r="3" />
-  //       <circle cx="45" cy="21" r="2.5" />
-  //       <circle cx="55" cy="21" r="2.5" />
+    //     <svg
+    //       width="36"
+    //       height="44"
+    //       viewBox="0 0 100 120"
+    //       fill="currentColor"
+    //       className="text-gold-500 animate-float drop-shadow-[0_2px_8px_rgba(234,179,8,0.3)]"
+    //       aria-label="Sleeba Cross"
+    //     >
 
-  //       {/* Left Arm */}
-  //       <circle cx="22" cy="42" r="3" />
-  //       <circle cx="24" cy="37" r="2.5" />
-  //       <circle cx="24" cy="47" r="2.5" />
+    //       {/* Descending Holy Spirit Dove */}
+    //       <path d="M50 2 c-3 0 -5 2 -5 5 c0 3 2 5 5 5 c3 0 5 -2 5 -5 c0 -3 -2 -5 -5 -5 z M46 6 c-3 -3 -8 -2 -10 1 c3 1 5 2 7 4 z M54 6 c3 -3 8 -2 10 1 c-3 1 -5 2 -7 4 z" />
 
-  //       {/* Right Arm */}
-  //       <circle cx="78" cy="42" r="3" />
-  //       <circle cx="76" cy="37" r="2.5" />
-  //       <circle cx="76" cy="47" r="2.5" />
+    //       {/* Vertical & Horizontal Cross Shafts */}
+    //       <rect x="46" y="22" width="8" height="50" rx="1" />
+    //       <rect x="25" y="38" width="50" height="8" rx="1" />
 
-  //       {/* Lotus Base */}
-  //       <path d="M28 80 C 38 68, 44 74, 50 74 C 56 74, 62 68, 72 80 C 64 86, 57 82, 50 82 C 43 82, 36 86, 28 80 Z" />
-  //       <path d="M20 86 C 32 76, 41 85, 50 85 C 59 85, 68 76, 80 86 C 70 95, 59 93, 50 93 C 41 93, 30 95, 20 86 Z" />
-  //     </svg>
+    //       {/* Budded / Floral Ends (3 Buds per arm) */}
+    //       {/* Top Arm */}
+    //       <circle cx="50" cy="19" r="3" />
+    //       <circle cx="45" cy="21" r="2.5" />
+    //       <circle cx="55" cy="21" r="2.5" />
 
-  //     <span className="h-px w-16 bg-gradient-to-l from-transparent to-gold-400/50" />
-  //   </div>
-   <div className="relative flex justify-center items-center py-4 animate-float">
-  <img 
-    src={NEW_EMBLEM_URL} // Replace with the path to the newly generated image
-    alt="Syro-Malabar Sleeva Cross" 
-    className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-[0_4px_12px_rgba(212,175,55,0.4)]" 
-  />
-</div>
+    //       {/* Left Arm */}
+    //       <circle cx="22" cy="42" r="3" />
+    //       <circle cx="24" cy="37" r="2.5" />
+    //       <circle cx="24" cy="47" r="2.5" />
+
+    //       {/* Right Arm */}
+    //       <circle cx="78" cy="42" r="3" />
+    //       <circle cx="76" cy="37" r="2.5" />
+    //       <circle cx="76" cy="47" r="2.5" />
+
+    //       {/* Lotus Base */}
+    //       <path d="M28 80 C 38 68, 44 74, 50 74 C 56 74, 62 68, 72 80 C 64 86, 57 82, 50 82 C 43 82, 36 86, 28 80 Z" />
+    //       <path d="M20 86 C 32 76, 41 85, 50 85 C 59 85, 68 76, 80 86 C 70 95, 59 93, 50 93 C 41 93, 30 95, 20 86 Z" />
+    //     </svg>
+
+    //     <span className="h-px w-16 bg-gradient-to-l from-transparent to-gold-400/50" />
+    //   </div>
+    <div className="relative flex justify-center items-center py-4 animate-float">
+      <img
+        src={NEW_EMBLEM_URL} // Replace with the path to the newly generated image
+        alt="Syro-Malabar Sleeva Cross"
+        className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-[0_4px_12px_rgba(212,175,55,0.4)]"
+      />
+    </div>
   );
 }
-
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
@@ -117,13 +115,13 @@ function App() {
                 fill="currentColor"
               />
             </svg> */}
-             <div className="relative flex justify-center items-center py-4 animate-float">
-  <img 
-    src={NEW_EMBLEM_URL} // Replace with the path to the newly generated image
-    alt="Syro-Malabar Sleeva Cross" 
-    className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-[0_4px_12px_rgba(212,175,55,0.4)]" 
-  />
-</div>
+            <div className="relative flex justify-center items-center py-4 animate-float">
+              <img
+                src={NEW_EMBLEM_URL} // Replace with the path to the newly generated image
+                alt="Syro-Malabar Sleeva Cross"
+                className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-[0_4px_12px_rgba(212,175,55,0.4)]"
+              />
+            </div>
           </div>
           <p className="text-sm font-sans uppercase tracking-[0.4em] text-gold-700 mb-6">
             With Great Joy
@@ -184,7 +182,7 @@ function App() {
               <div className="text-center">
                 <SectionLabel>The Ordination Of</SectionLabel>
                 <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-ink-900">
-                  Rev. Dn. John Mathew
+                  Rev. Dn. Noyal B Varghese
                 </h2>
                 <DoveOrnament />
 
@@ -203,7 +201,7 @@ function App() {
                 {/* Invitation message */}
                 <p className="font-sans text-sm text-ink-700 leading-relaxed">
                   With hearts full of gratitude to the Almighty, the family of
-                  Mr. &amp; Mrs. Thomas Mathew joyfully invites you to share in
+                  Mr. &amp; Mrs. Baby Varghese joyfully invites you to share in
                   the sacred celebration as their son is ordained into the holy
                   priesthood.
                 </p>
@@ -216,10 +214,10 @@ function App() {
                     Date
                   </p>
                   <p className="font-serif text-lg font-semibold text-ink-900">
-                    December 21
+                    December 30
                   </p>
                   <p className="text-xs font-sans text-ink-700">
-                    2026 · Monday
+                    2026 · Wednesday
                   </p>
                 </div>
                 <div className="rounded-xl bg-cream-200/70 border border-gold-400/30 px-4 py-5 text-center">
@@ -236,14 +234,14 @@ function App() {
               {/* Church name & address */}
               <div className="mt-5 rounded-xl bg-gradient-to-br from-amber-50 to-cream-100 border border-gold-400/20 px-5 py-5 text-center">
                 <p className="font-serif text-lg font-semibold text-ink-900">
-                  St. Mary's Malankara
+                  St. Joseph 
                   <br />
-                  Catholic Church
+                  Syro Malabar Church
                 </p>
                 <p className="mt-1 text-xs font-sans text-ink-700 leading-relaxed">
-                  Pattom, Trivandrum
+                  Punnakunnam, Alappuzha
                   <br />
-                  Kerala 695004, India
+                  Kerala 688504, India
                 </p>
               </div>
             </div>
@@ -264,22 +262,22 @@ function App() {
           <div className="space-y-6 text-left">
             {[
               {
-                time: "8:30 AM",
+                time: "2:00 PM",
                 title: "Assembly & Prayer",
                 desc: "Guests gather in the church as the choir sings preparatory hymns.",
               },
               {
-                time: "9:00 AM",
+                time: "3:00 PM",
                 title: "Holy Qurbana & Ordination",
                 desc: "The Most Rev. Archbishop celebrates the Holy Qurbana with the Rite of Ordination.",
               },
               {
-                time: "11:30 AM",
+                time: "5:30 PM",
                 title: "First Blessing",
                 desc: "The newly ordained priest offers his first priestly blessing to the congregation.",
               },
               {
-                time: "12:00 PM",
+                time: "6:00 PM",
                 title: "Reception",
                 desc: "Join us for a celebratory reception in the parish hall with light refreshments.",
               },
@@ -351,7 +349,7 @@ function App() {
           </div>
 
           <p className="mt-8 font-serif italic text-lg text-cream-200">
-            December 21, 2026
+            December 30, 2026
           </p>
         </div>
       </section>
@@ -361,7 +359,7 @@ function App() {
         <div className="mx-auto max-w-md text-center">
           <SectionLabel>The Church</SectionLabel>
           <h3 className="font-serif text-3xl font-semibold text-ink-900 mb-2">
-            St. Mary's Malankara
+            St. Joseph Syro Malabar Church
           </h3>
           <DoveOrnament />
 
@@ -370,7 +368,7 @@ function App() {
             <div className="w-full max-w-xs mx-auto aspect-square rounded-2xl overflow-hidden border-2 border-gold-400 shadow-lg">
               <img
                 src={CHURCH_URL}
-                alt="St. Mary's Malankara Catholic Church"
+                alt="St. Joseph Syro Malabar Church"
                 className="w-full h-56 object-cover"
               />
             </div>
@@ -378,10 +376,10 @@ function App() {
             <div className="absolute inset-0 bg-gradient-to-t from-ink-900/50 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-5 text-left">
               <p className="font-serif text-lg font-semibold text-cream-100">
-                St. Mary's Malankara Catholic Church
+                St. Joseph Syro Malabar Church
               </p>
               <p className="text-xs font-sans text-cream-300/90 mt-1">
-                Pattom, Trivandrum · Kerala 695004
+                Punnakunnam, Alappuzha · Kerala 688504
               </p>
             </div>
           </div>
@@ -427,13 +425,13 @@ function App() {
                 opacity="0.85"
               />
             </svg> */}
-             <div className="relative flex justify-center items-center py-4 animate-float">
-  <img 
-    src={NEW_EMBLEM_URL} // Replace with the path to the newly generated image
-    alt="Syro-Malabar Sleeva Cross" 
-    className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-[0_4px_12px_rgba(212,175,55,0.4)]" 
-  />
-</div>
+            <div className="relative flex justify-center items-center py-4 animate-float">
+              <img
+                src={NEW_EMBLEM_URL} // Replace with the path to the newly generated image
+                alt="Syro-Malabar Sleeva Cross"
+                className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-[0_4px_12px_rgba(212,175,55,0.4)]"
+              />
+            </div>
           </div>
 
           <SectionLabel>A Blessing</SectionLabel>
@@ -458,10 +456,10 @@ function App() {
             With love and prayers,
           </p>
           <p className="mt-3 font-serif text-xl font-semibold text-ink-900">
-            The Mathew Family
+            The Thanniyath Family
           </p>
           <p className="mt-1 font-sans text-sm text-ink-700">
-            &amp; the Parish of St. Mary's
+            &amp; the Parish of St. Jospeh's
           </p>
 
           <div className="mt-12">
